@@ -1,10 +1,10 @@
 # AWS-Terraform-ALB-Autoscaling-EC2
-This repository contains Terraform scripts to set up an AWS Application Load Balancer (ALB) with an HTTP listener and an Auto Scaling Group (ASG) as the target group. The ASG manages EC2 instances, automatically scaling between 1 and 4 instances based on demand.
+This repository contains Terraform scripts to set up an AWS Application Load Balancer (ALB) with an HTTP listener, along with an Auto Scaling Group (ASG) as the target group to manage EC2 instances. The ASG dynamically scales between 1 and 4 instances based on demand. The remote state is securely stored in Terraform Cloud for collaboration and state management.
 
 **Files:**
-1. [`main.tf`](https://github.com/Sebastianutcn/pipeline-terraform/blob/main/main.tf) is used to create the pipeline and IAM roles for it. All the stages are put together.
-2. [`backend.tf`](https://github.com/Sebastianutcn/pipeline-terraform/blob/main/codebuild.tf) is used to configure the remote backend for Terraform Cloud.
-3. [`provider.tf`](https://github.com/Sebastianutcn/pipeline-terraform/blob/main/codedeploy.tf) is used to configure the provider.
+1. [`main.tf`](https://github.com/Sebastianutcn/AWS-Terraform-ALB-Autoscaling-EC2/blob/main/main.tf) is used to create the pipeline and IAM roles for it. All the stages are put together.
+2. [`backend.tf`](https://github.com/Sebastianutcn/AWS-Terraform-ALB-Autoscaling-EC2/blob/main/backend.tf) is used to configure the remote backend for Terraform Cloud.
+3. [`provider.tf`](https://github.com/Sebastianutcn/AWS-Terraform-ALB-Autoscaling-EC2/blob/main/provider.tf) is used to configure the provider.
 
 ## Installation
 - Command to authenticate Terraform with Terraform Cloud
